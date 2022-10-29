@@ -1,0 +1,27 @@
+body{
+    font-family: monospace;
+}
+
+ul{
+    font-family: Helvetica;
+}
+/*body와 ul은 선택기, 스타일이 적용되는 요소를 선택한다.*/
+/*예를 들어 ul은 <ul>요소에 적용되는 디자인이다*/
+
+li {
+    list-style: circle;
+  }
+  
+  .list {
+    list-style: square;
+  } /*클래스 선택기이다. list로 설정된 클래스에 스타일 적용시킨다.*/
+  
+#msg {
+  font-family: monospace;
+} /*id 선택기이다. msg로 설정된 id에 디자인 적용*/
+
+.light-theme {
+  color: #000000;
+  background: #00FF00;
+}
+
