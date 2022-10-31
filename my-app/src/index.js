@@ -5,16 +5,26 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import Clock from './ch4/Clock';
+import CommentList from './ch5/CommentList'
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-setInterval(() => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <Clock />
-    </React.StrictMode>,
-    document.getElementById(`root`)
-  );
-}, 1000);
+
+// setInterval(() => {
+//   ReactDOM.render(
+//     <React.StrictMode>
+//       <Clock />
+//     </React.StrictMode>,   
+//     document.getElementById(`root`)
+//   );
+// }, 1000);    시계를 만들기 위해 1000ms 마다 반복하는 코드
+
+
+ReactDOM.render(
+  <React.StrictMode>
+    <CommentList />
+  </React.StrictMode>,   
+  document.getElementById('root')
+);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
